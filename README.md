@@ -6,6 +6,9 @@
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-green.svg)](CHANGELOG.md)
 [![Quality Check](https://img.shields.io/badge/Quality-Validated-brightgreen.svg)](#-quality-assurance)
 
+![GitHub Stars](https://img.shields.io/github/stars/tammo2701/StreamNoAds?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/tammo2701/StreamNoAds?style=social)
+
 ---
 
 ## 📋 Table of Contents
@@ -223,14 +226,6 @@ We welcome contributions! Here's how you can help:
 - **Questions?** Open an [Issue](https://github.com/tammo2701/StreamNoAds/issues)
 - **Want to contribute?** See [CONTRIBUTING.md](CONTRIBUTING.md)
 - **Found a bug?** Report it with details about your setup
-
----
-
-## 📊 Repository Stats
-
-![GitHub Stars](https://img.shields.io/github/stars/tammo2701/StreamNoAds?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/tammo2701/StreamNoAds?style=social)
-![License](https://img.shields.io/github/license/tammo2701/StreamNoAds)
 
 ---
 
