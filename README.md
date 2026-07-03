@@ -26,11 +26,11 @@
 
 ✅ **Comprehensive Coverage** – Blocks ads on 20+ streaming platforms
 ✅ **Actively Maintained** – Updated regularly with new tracking domains
-✅ **Non-Invasive** – Whitelist prevents breaking core streaming functionality
+✅ **Non-Invasive** – Allowlist prevents breaking core streaming functionality
 ✅ **AdGuard Optimized** – Crafted specifically for AdGuard Home with syntax validation
 ✅ **Pi-hole Compatible** – Also works with other DNS-based blockers
 ✅ **Well Documented** – Clear comments for each domain and platform section
-✅ **Quality Assured** – Automated validation removes duplicates and syntax errors
+✅ **Quality Assured** – Validated domains organized by platform
 
 ---
 
@@ -38,10 +38,10 @@
 
 | Metric | Count |
 |--------|-------|
-| **Total Blocked Domains** | 200+ |
+| **Total Blocked Domains** | 250+ |
 | **Streaming Services Covered** | 20+ |
 | **Ad-Tech Platforms** | 15+ |
-| **Whitelisted Domains** | 15+ |
+| **Whitelisted Domains** | 20+ |
 | **Last Updated** | 2026 |
 
 ---
@@ -67,12 +67,7 @@
 - 📺 **Tubi** – Ad-supported streaming
 
 ### Ad-Tech Platforms (Multi-Service)
-- FreeWheel
-- SpotX
-- Yospace
-- Conviva
-- Moat Analytics
-- IAS / Integral Ad Science
+- FreeWheel, SpotX, Yospace, Conviva, Moat Analytics, IAS / Integral Ad Science
 
 ---
 
@@ -85,31 +80,37 @@
 1. Open your **AdGuard Home Web Interface**
 2. Navigate to **Filters → DNS Blocklists**
 3. Click **Add Blocklist**
-4. Copy and paste the following URL:
+4. Paste the blocklist URL:
    ```
    https://raw.githubusercontent.com/tammo2701/StreamNoAds/main/adblock-streaming-services
    ```
 5. Click **Save** and enable the filter
-6. *(Optional)* Add the whitelist to preserve functionality:
+
+**6. Add the Allowlist (IMPORTANT):**
+   - Go to **Filters → DNS Allowlists**
+   - Click **Add Allowlist**
+   - Paste the whitelist URL:
    ```
    https://raw.githubusercontent.com/tammo2701/StreamNoAds/main/whitelist-streaming
    ```
+   - Click **Save** and enable the allowlist
 
-> 💡 **Tip:** Add both blocklist and whitelist for optimal performance. The whitelist prevents login and streaming features from breaking.
+> 💡 **Important:** Both blocklist AND allowlist must be enabled for optimal performance. The allowlist ensures Netflix, YouTube, and other services work properly while blocking ads.
 
 ### 2️⃣ Pi-hole Setup
 
 1. Log into your **Pi-hole Admin Console**
 2. Go to **Adlists**
-3. Add the URL from step 4 above
-4. Click **Add**
-5. Perform a **gravity update** for changes to take effect
+3. Add the blocklist URL from step 4 above
+4. Add the allowlist URL as a separate entry (if supported)
+5. Click **Add**
+6. Perform a **gravity update** for changes to take effect
 
 ### 3️⃣ Other DNS-Based Blockers
 
 For compatible DNS blockers (uBlock Origin, NextDNS, Quad9, etc.):
-- Use the raw GitHub URL of `adblock-streaming-services`
-- Follow your software's instructions for adding custom blocklists
+- Use the raw GitHub URLs
+- Follow your software's instructions for adding blocklists
 - Syntax compatibility may vary
 
 ---
@@ -129,19 +130,23 @@ For compatible DNS blockers (uBlock Origin, NextDNS, Quad9, etc.):
 ## ❓ FAQ
 
 ### Q: Will this block ads on all streaming platforms?
-**A:** Not necessarily. This list covers major platforms where ad domains are publicly known. Some platforms use sophisticated ad delivery (server-side ads) that cannot be blocked at the DNS level.
+**A:** Not necessarily. This list covers major platforms where ad domains are publicly known. Some platforms use server-side ads that cannot be blocked at the DNS level.
 
 ### Q: Does this list work on mobile phones?
-**A:** Yes, if you set up your phone's DNS to use AdGuard Home or Pi-hole. For native apps, effectiveness depends on the platform's implementation.
+**A:** Yes, if you configure your phone's DNS to use AdGuard Home or Pi-hole. For native apps, effectiveness depends on the platform's implementation.
 
 ### Q: Will I lose access to my account?
-**A:** No. The **whitelist ensures core functionality** (login, streaming APIs, CDNs) continues working while blocking ads.
+**A:** No. The **allowlist ensures core functionality** (login, streaming APIs, CDNs) continues working while blocking ads.
+
+### Q: What's the difference between the blocklist and allowlist?
+**A:** 
+- **Blocklist** = Domains to block (ads, tracking)
+- **Allowlist** = Exceptions to allow (critical services, APIs, CDNs)
+
+Both must be added to AdGuard Home for best results.
 
 ### Q: How often is this list updated?
 **A:** The list is reviewed and updated regularly. Check the [CHANGELOG](CHANGELOG.md) for latest changes.
-
-### Q: Why are some domains whitelisted?
-**A:** Some domains are used for both ads AND essential functionality (e.g., authentication, quality control). The whitelist ensures these critical services work while blocking advertising-specific domains.
 
 ### Q: Can I use this with VPNs?
 **A:** Yes! AdGuard Home/Pi-hole works alongside VPN services. Just ensure your DNS is routed through AdGuard Home.
@@ -173,18 +178,19 @@ We welcome contributions! Here's how you can help:
 ## 🗺️ Roadmap
 
 ### Phase 1 (Q3 2026)
-- [ ] Expand to 250+ domains
-- [ ] Add YouTube TV support
-- [ ] Integrate community submissions
+- [x] Professional README & documentation
+- [x] 250+ optimized domains
+- [x] Comprehensive CHANGELOG
+- [ ] First GitHub Release (v2.0.0)
 
 ### Phase 2 (Q4 2026)
-- [ ] Automated daily updates
-- [ ] Statistics dashboard
-- [ ] Mobile app compatibility guide
+- [ ] Automated validation workflows
+- [ ] Community submissions system
+- [ ] Regional blocklists (EU, US, APAC)
 
 ### Phase 3 (2027)
-- [ ] Region-specific blocklists (EU, US, APAC)
-- [ ] Performance optimization tools
+- [ ] Statistics dashboard
+- [ ] Mobile app compatibility guide
 - [ ] Community Discord/Forum
 
 ---
