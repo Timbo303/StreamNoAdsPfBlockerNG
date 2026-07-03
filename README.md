@@ -4,10 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-green.svg)](CHANGELOG.md)
-[![Quality Check](https://img.shields.io/badge/Quality-Validated-brightgreen.svg)](#-quality-assurance)
-
-![GitHub Stars](https://img.shields.io/github/stars/tammo2701/StreamNoAds?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/tammo2701/StreamNoAds?style=social)
+[![Quality Check](https://img.shields.io/badge/Quality-Validated-brightgreen.svg)](#-features)
 
 ---
 
@@ -248,3 +245,5 @@ This project is licensed under the **MIT License** – see [LICENSE](LICENSE) fi
 **Made with ❤️ by [tammo2701](https://github.com/tammo2701)**
 
 ⭐ **If you find this list useful, please consider starring the repository!**
+
+![GitHub User Followers](https://img.shields.io/github/followers/tammo2701?style=social)
