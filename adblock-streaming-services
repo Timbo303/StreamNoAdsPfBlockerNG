@@ -1,7 +1,19 @@
+! =====================================================
+! StreamNoAds - Premium Streaming Ad Blocklist
+! Optimized for AdGuard Home & Pi-hole
+! Last Updated: 2026
+! =====================================================
+! 
+! Purpose: Block advertisement and tracking domains
+! on streaming platforms without breaking functionality
+!
+! For best results, also add: whitelist-streaming
+! =====================================================
+
 ! =============================================
 ! YOUTUBE / GOOGLE ADS
 ! =============================================
- 
+
 ||googleadservices.com^
 ||googlesyndication.com^
 ||doubleclick.net^
@@ -15,11 +27,14 @@
 ||tpc.googlesyndication.com^
 ||www.youtube.com/api/stats/ads^
 ||www.youtube.com/pagead/^
- 
+||gstatic.com/generate_204^
+||youtube.com/api/stats/ads^
+||s.youtube.com/api/stats/ads^
+
 ! =============================================
 ! NETFLIX
 ! =============================================
- 
+
 ||ads.netflix.com^
 ||adtechfwd.com^
 ||adserver.netflix.com^
@@ -29,11 +44,14 @@
 ||comet.netflix.com^
 ||edge.api.brightline.tv^
 ||linear.tv.ads.conviva.com^
- 
+||nflxvideo.net^
+||thumbs.nflxvideo.net^
+||analytics-nflx.netflix.com^
+
 ! =============================================
 ! AMAZON PRIME VIDEO
 ! =============================================
- 
+
 ||aax.amazon-adsystem.com^
 ||z-na.amazon-adsystem.com^
 ||fls-na.amazon.com^
@@ -44,11 +62,13 @@
 ||device-metrics-us.amazon.com^
 ||fls-eu.amazon.com^
 ||rcm-eu.amazon-adsystem.com^
- 
+||amazon-adsystem.com^
+||adsdelivery.amazon.com^
+
 ! =============================================
 ! PLUTO TV
 ! =============================================
- 
+
 ||ads.pluto.tv^
 ||adserver.pluto.tv^
 ||tracking.pluto.tv^
@@ -58,11 +78,12 @@
 ||phoenix.pluto.tv/v1/tracking^
 ||adstir.pluto.tv^
 ||ads-stitcher.pluto.tv^
- 
+||analytics.pluto.tv^
+
 ! =============================================
 ! TUBI
 ! =============================================
- 
+
 ||ads.tubi.tv^
 ||adserver.tubi.tv^
 ||tracking.tubi.tv^
@@ -70,11 +91,11 @@
 ||analytics.tubi.tv^
 ||pixel.tubi.tv^
 ||s.tubi.tv/ads^
- 
+
 ! =============================================
 ! JOYN (ProSiebenSat.1)
 ! =============================================
- 
+
 ||adtech.de^
 ||adtech.com^
 ||ads.joyn.de^
@@ -85,11 +106,11 @@
 ||adition.com^
 ||p7s1-advertising.de^
 ||t.p7s1-ad.com^
- 
+
 ! =============================================
 ! RTL+ / TVNOW
 ! =============================================
- 
+
 ||ads.rtl.de^
 ||adserver.rtl.de^
 ||tracking.rtl.de^
@@ -100,11 +121,12 @@
 ||tracker.rtl.de^
 ||emetriq.de^
 ||adscale.de^
- 
+||rtlplus.de/tracking^
+
 ! =============================================
 ! DISNEY+
 ! =============================================
- 
+
 ||ads.disneyplus.com^
 ||tracking.disneyplus.com^
 ||adserver.disneyplus.com^
@@ -112,11 +134,12 @@
 ||cdn.registerdisney.go.com/ads^
 ||espncdn.com/ads^
 ||bam-sdk.go.com/ads^
- 
+||metrics.espn.com^
+
 ! =============================================
 ! TWITCH
 ! =============================================
- 
+
 ||ads.twitch.tv^
 ||adserver.twitch.tv^
 ||imasdk.googleapis.com^
@@ -125,15 +148,13 @@
 ||static.twitchsvc.net/ads^
 ||usher.twitchapps.com^
 ||twitchsvc.net/ads^
-||gql.twitch.tv^$important,denyallow=gql.twitch.tv
- 
-! Twitch Purple Ad Tracking
+||gql.twitch.tv$important,denyallow=gql.twitch.tv
 ||pubads.g.doubleclick.net^
- 
+
 ! =============================================
 ! SKY / WOW
 ! =============================================
- 
+
 ||ads.sky.de^
 ||adserver.sky.de^
 ||tracking.sky.de^
@@ -143,79 +164,159 @@
 ||sky.adform.net^
 ||adform.net^
 ||ads.wowtv.de^
- 
+||skybroadcast.de/ads^
+
 ! =============================================
 ! CRUNCHYROLL
 ! =============================================
- 
+
 ||ads.crunchyroll.com^
 ||adserver.crunchyroll.com^
 ||tracking.crunchyroll.com^
 ||pixel.crunchyroll.com^
 ||analytics.vrv.co^
 ||ads.vrv.co^
- 
+||crunchyroll.com/static/ads^
+
+! =============================================
+! ARD / ZDF (MEDIATHEK)
+! =============================================
+
+||adserver.ard.de^
+||ads.zdf.de^
+||tracking.ard.de^
+||tracking.zdf.de^
+||pixel.ard.de^
+||analytics.ard.de^
+||ads.funk.net^
+
 ! =============================================
 ! GEMEINSAME AD-PLATTFORMEN
-! (werden von mehreren Diensten genutzt)
+! (Verwendet von mehreren Diensten)
 ! =============================================
- 
+
 ! FreeWheel (Streaming-Werbeplattform)
 ||fwmrm.net^
 ||cdn.fwmrm.net^
 ||adm.fwmrm.net^
 ||mfr.fwmrm.net^
- 
+
 ! Innovid (Streaming-Werbeplattform)
 ||innovid.com^
 ||ad.innovid.com^
 ||sync.innovid.com^
 ||pixel.innovid.com^
- 
+
 ! SpotX (Streaming-Werbeplattform)
 ||spotx.tv^
 ||cdn.spotx.tv^
 ||search.spotxchange.com^
- 
+
 ! Tremor Video / Unruly
 ||tremorhub.com^
 ||unrulymedia.com^
- 
+
 ! Yospace (Ad-Stitching)
 ||yospace.com^
 ||csm-e.yospace.com^
- 
+
 ! SpringServe
 ||springserve.com^
 ||vid.springserve.com^
- 
+
 ! Brightcove (Video-Werbung)
 ||metrics.brightcove.com^
- 
-! Conviva (Video Analytics)
+||bcovlive.io/ads^
+
+! Conviva (Video Analytics & Quality Monitoring)
 ||conviva.com^
-||cws.conviva.com^
 ||client.conviva.com^
- 
+
 ! Moat Analytics
 ||moatads.com^
 ||moat.com^
 ||z.moatads.com^
- 
+
 ! IAS / Integral Ad Science
 ||pixel.adsafeprotected.com^
 ||dt.adsafeprotected.com^
- 
-! Segment Analytics
-||api.segment.io^
- 
+
+! =============================================
+! ANALYTICS & TRACKING PLATFORMS
+! =============================================
+
+! Google Analytics
+||googleanalytics.com^
+||google-analytics.com^
+||analytics.google.com^
+
 ! Amplitude Analytics
 ||api.amplitude.com^
 ||api2.amplitude.com^
- 
+
 ! Mixpanel
 ||api.mixpanel.com^
- 
-! Branch.io
+
+! Segment Analytics (CDN is whitelisted for essential functions)
+||segment.com^
+||analytics.segment.com^
+
+! Branch.io (Deep Linking)
 ||branch.io^
 ||api2.branch.io^
+
+! New Relic Monitoring
+||bam.nr-data.net^
+
+! Sentry Error Tracking
+||sentry.io^
+
+! =============================================
+! MOBILE & APP ADVERTISING
+! =============================================
+
+! AppsFlyer
+||appsflyer.com^
+||af-reporting.s3.amazonaws.com^
+
+! Adjust
+||adjust.com^
+||api.adjust.com^
+
+! Branch Metrics
+||bnc.lt^
+
+! Firebase Analytics
+||firebase.googleapis.com/v1/projects/*/analytics^
+||firebaseremoteconfig.googleapis.com^
+
+! =============================================
+! GENERAL AD NETWORKS
+! =============================================
+
+||adnxs.com^
+||appnexus.com^
+||rtbhouse.com^
+||criteo.com^
+||bing.com/ads^
+||facebook.com/tr^
+||doubleclick.net^
+
+! =============================================
+! NOTES
+! =============================================
+! 
+! This list is optimized for AdGuard Home.
+! For maximum effectiveness, also enable the whitelist:
+! - whitelist-streaming
+!
+! If you experience issues with a service:
+! 1. Check if the service is in the whitelist
+! 2. Report the issue on GitHub
+! 3. Temporarily disable the list to confirm the cause
+!
+! Updated: 2026
+! Maintained by: tammo2701
+! GitHub: https://github.com/tammo2701/StreamNoAds
+!
+! =====================================================

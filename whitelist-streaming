@@ -1,94 +1,200 @@
+! =====================================================
+! StreamNoAds - Whitelist for Streaming Services
+! Critical domains for core streaming functionality
+! Optimized for AdGuard Home & Pi-hole
+! Last Updated: 2026
+! =====================================================
+!
+! Purpose: Ensure core functionality of streaming services
+! These domains must NOT be blocked, as they are essential for:
+! - Authentication & Login
+! - Video Streaming & CDN
+! - API Communication
+! - Quality Monitoring (non-ad)
+!
+! =====================================================
+
 ! =============================================
 ! GOOGLE / YOUTUBE
 ! =============================================
- 
+
 ! Google APIs – für YouTube-Login und Features
 @@||apis.google.com^
- 
+
 ! YouTube Embeds auf anderen Seiten
 @@||www.youtube-nocookie.com^
- 
+
+! YouTube CDN
+@@||googlevideo.com^
+
 ! =============================================
 ! NETFLIX
 ! =============================================
- 
+
 ! Netflix Videoqualitätssteuerung
 @@||cws.conviva.com^
- 
+
 ! Netflix CDN
 @@||assets.nflxext.com^
- 
+
+! Netflix Streaming CDN
+@@||nflxso.net^
+
 ! =============================================
 ! AMAZON PRIME VIDEO
 ! =============================================
- 
+
 ! Amazon Login & Account
 @@||unagi.amazon.com^
- 
+
+! Prime Video CDN
+@@||primevideo.com^
+
 ! =============================================
 ! PLUTO TV
 ! =============================================
- 
+
 ! Pluto TV Hauptfunktionen (App-Start, Login)
 @@||api.pluto.tv^
 @@||boot.pluto.tv^
- 
+
+! Pluto TV CDN
+@@||plutotv.net^
+
+! =============================================
+! TUBI
+! =============================================
+
+! Tubi API & Streaming
+@@||api.tubi.tv^
+@@||tubicdn.com^
+
 ! =============================================
 ! JOYN
 ! =============================================
- 
+
 ! Joyn Login & Accountfunktionen
 @@||api.joyn.de^
 @@||auth.joyn.de^
- 
+
+! Joyn Streaming
+@@||joyn.de^
+
 ! =============================================
 ! RTL+
 ! =============================================
- 
+
 ! RTL+ Login & Streaming-Funktionen
 @@||api.tvnow.de^
 @@||auth.rtl.de^
- 
+
+! RTL+ Streaming CDN
+@@||rtl-online.de^
+
 ! =============================================
 ! DISNEY+
 ! =============================================
- 
+
 ! Disney+ Login (über BAM/Disney-API)
 @@||global.edge.bamgrid.com^
 @@||disney.api.edge.bamgrid.com^
- 
+
+! Disney CDN
+@@||disneyplus.com^
+
 ! =============================================
 ! TWITCH
 ! =============================================
- 
-! Twitch GraphQL – ohne das funktioniert Twitch gar nicht
+
+! Twitch GraphQL – kritisch für Funktionalität
 @@||gql.twitch.tv^
- 
+
 ! Twitch Clips & VODs
 @@||clips.twitch.tv^
- 
+
+! Twitch Video CDN
+@@||video.twitchcdn.net^
+@@||usher.twitchapps.com^
+
 ! =============================================
 ! SKY / WOW
 ! =============================================
- 
+
 ! Sky Login & Account
 @@||loginpage.sky.de^
 @@||account.sky.de^
- 
+
+! Sky Streaming
+@@||sky.de^
+
 ! =============================================
 ! CRUNCHYROLL
 ! =============================================
- 
+
 ! Crunchyroll Login & API
 @@||api.crunchyroll.com^
 @@||auth.crunchyroll.com^
- 
+
+! Crunchyroll CDN
+@@||crunchyroll.com^
+
 ! =============================================
-! ALLGEMEIN
+! ARD / ZDF MEDIATHEK
 ! =============================================
- 
+
+! ARD Mediathek API & Streaming
+@@||api.ardmediathek.de^
+@@||ard.de^
+
+! ZDF Mediathek API & Streaming
+@@||api.zdf.de^
+@@||zdf.de^
+
+! =============================================
+! ESSENTIAL TRACKING (NON-AD)
+! =============================================
+
 ! Segment CDN – für App-Grundfunktionen bei mehreren Diensten
 @@||cdn.segment.com^
- 
-! Conviva – Videoqualität bei Netflix, Joyn, RTL+
-@@||cws.conviva.com^
+
+! Conviva – Videoqualität & Monitoring (Non-Ad)
+! Already handled in main whitelist entry above
+
+! Cloudflare CDN (used by many services)
+@@||cdnjs.cloudflare.com^
+
+! Fastly CDN (used by many services)
+@@||fastly.net^
+
+! AWS CDN & Services
+@@||cloudfront.net^
+@@||amazonaws.com^
+
+! Akamai CDN (used by streaming services)
+@@||akamaized.net^
+
+! =============================================
+! GENERAL STREAMING INFRASTRUCTURE
+! =============================================
+
+! HTTP/2 & Connection Tests
+@@||http2.golang.org^
+
+! =============================================
+! NOTES
+! =============================================
+!
+! Whitelist Format:
+! @@||domain.com^ = Exception rule (allow domain)
+! 
+! These are EXCEPTIONS to the blocklist above.
+! They ensure critical services are not blocked.
+!
+! If a streaming service is broken after applying
+! the blocklist, it may need to be added here.
+!
+! Updated: 2026
+! Maintained by: tammo2701
+! GitHub: https://github.com/tammo2701/StreamNoAds
+!
+! =====================================================
