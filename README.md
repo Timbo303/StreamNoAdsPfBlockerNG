@@ -1,6 +1,6 @@
 # 🚀 StreamNoAds – Premium Streaming Ad Blocklist
 
-> **Block ads on your favorite streaming services with a curated, actively maintained blocklist optimized for AdGuard Home**
+> **Block ads on your favorite streaming services with a curated, actively maintained blocklist optimized for AdGuard Home/PFBlockerNG**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-green.svg)](CHANGELOG.md)
@@ -172,26 +172,6 @@ We welcome contributions! Here's how you can help:
 - Our team will validate and merge
 
 ### See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
----
-
-## 🗺️ Roadmap
-
-### Phase 1 (Q3 2026)
-- [x] Professional README & documentation
-- [x] 250+ optimized domains
-- [x] Comprehensive CHANGELOG
-- [ ] First GitHub Release (v2.0.0)
-
-### Phase 2 (Q4 2026)
-- [ ] Automated validation workflows
-- [ ] Community submissions system
-- [ ] Regional blocklists (EU, US, APAC)
-
-### Phase 3 (2027)
-- [ ] Statistics dashboard
-- [ ] Mobile app compatibility guide
-- [ ] Community Discord/Forum
 
 ---
 
