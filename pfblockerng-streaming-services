@@ -1,6 +1,6 @@
 ! =====================================================
 ! StreamNoAds - Premium Streaming Ad Blocklist
-! Optimized for AdGuard Home & Pi-hole
+! Optimized for PfBlockerNG
 ! Last Updated: 2026
 ! =====================================================
 ! 
@@ -264,7 +264,7 @@ doubleclick.net
 ! 3. Temporarily disable the list to confirm the cause
 !
 ! Updated: 2026
-! Maintained by: tammo2701
-! GitHub: https://github.com/tammo2701/StreamNoAds
+! Maintained by: Timbo303
+! Original GitHub: https://github.com/tammo2701/StreamNoAds
 !
 ! =====================================================
