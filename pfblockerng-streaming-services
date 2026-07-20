@@ -1,0 +1,270 @@
+! =====================================================
+! StreamNoAds - Premium Streaming Ad Blocklist
+! Optimized for AdGuard Home & Pi-hole
+! Last Updated: 2026
+! =====================================================
+! 
+! Purpose: Block advertisement and tracking domains
+! on streaming platforms without breaking functionality
+!
+! For best results, also add: whitelist-streaming
+! =====================================================
+
+! =============================================
+! NETFLIX
+! =============================================
+
+ads.netflix.com
+adserver.netflix.com
+tracking.netflix.com
+nrd.netflix.com
+ichnaea.netflix.com
+comet.netflix.com
+analytics-nflx.netflix.com
+
+! =============================================
+! AMAZON PRIME VIDEO
+! =============================================
+
+aax.amazon-adsystem.com
+z-na.amazon-adsystem.com
+fls-na.amazon.com
+s.amazon-adsystem.com
+c.amazon-adsystem.com
+mads.amazon-adsystem.com
+ads.primevideo.com
+device-metrics-us.amazon.com
+fls-eu.amazon.com
+rcm-eu.amazon-adsystem.com
+amazon-adsystem.com
+adsdelivery.amazon.com
+
+! =============================================
+! PLUTO TV
+! =============================================
+
+ads.pluto.tv
+adserver.pluto.tv
+tracking.pluto.tv
+syndication.pluto.tv
+ssp.pluto.tv
+adstir.pluto.tv
+ads-stitcher.pluto.tv
+analytics.pluto.tv
+
+! =============================================
+! TUBI
+! =============================================
+
+ads.tubi.tv
+adserver.tubi.tv
+tracking.tubi.tv
+ad.tubi.io
+analytics.tubi.tv
+pixel.tubi.tv
+
+! =============================================
+! JOYN
+! =============================================
+
+adtech.de
+adtech.com
+ads.joyn.de
+tracking.joyn.de
+analytics.joyn.de
+pixel.joyn.de
+ad.7tv.de
+adition.com
+p7s1-advertising.de
+t.p7s1-ad.com
+
+! =============================================
+! RTL+
+! =============================================
+
+ads.rtl.de
+adserver.rtl.de
+tracking.rtl.de
+analytics.tvnow.de
+ad.tvnow.de
+pixel.tvnow.de
+rtl-ads.de
+tracker.rtl.de
+emetriq.de
+adscale.de
+
+! =============================================
+! DISNEY+
+! =============================================
+
+ads.disneyplus.com
+tracking.disneyplus.com
+adserver.disneyplus.com
+analytics.disneyplus.com
+
+! =============================================
+! TWITCH
+! =============================================
+
+ads.twitch.tv
+adserver.twitch.tv
+imasdk.googleapis.com
+spade.twitch.tv
+tracking.twitch.tv
+
+! =============================================
+! SKY / WOW
+! =============================================
+
+ads.sky.de
+adserver.sky.de
+tracking.sky.de
+analytics.sky.de
+ad.nowtv.de
+pixel.sky.com
+sky.adform.net
+adform.net
+ads.wowtv.de
+
+! =============================================
+! CRUNCHYROLL
+! =============================================
+
+ads.crunchyroll.com
+adserver.crunchyroll.com
+tracking.crunchyroll.com
+pixel.crunchyroll.com
+analytics.vrv.co
+ads.vrv.co
+
+! =============================================
+! ARD / ZDF
+! =============================================
+
+adserver.ard.de
+ads.zdf.de
+tracking.ard.de
+tracking.zdf.de
+pixel.ard.de
+analytics.ard.de
+ads.funk.net
+
+! =============================================
+! JIOHOTSTAR
+! =============================================
+
+ads.jiohotstar.com
+adserver.jiohotstar.com
+tracking.jiohotstar.com
+analytics.jiohotstar.com
+pixel.jiohotstar.com
+ads.media.jio.com
+tracking.media.jio.com
+
+! =============================================
+! ZEE5
+! =============================================
+
+ads.zee5.com
+adserver.zee5.com
+tracking.zee5.com
+analytics.zee5.com
+pixel.zee5.com
+ads.zee.com
+tracking.zee.com
+
+! =============================================
+! SONYLIV
+! =============================================
+
+ads.sonyliv.com
+adserver.sonyliv.com
+tracking.sonyliv.com
+analytics.sonyliv.com
+pixel.sonyliv.com
+ads.sony.com
+tracking.sony.com
+
+! =============================================
+! COMMON AD PLATFORMS
+! =============================================
+
+fwmrm.net
+cdn.fwmrm.net
+adm.fwmrm.net
+innovid.com
+ad.innovid.com
+sync.innovid.com
+pixel.innovid.com
+spotx.tv
+cdn.spotx.tv
+tremorhub.com
+unrulymedia.com
+yospace.com
+csm-e.yospace.com
+springserve.com
+vid.springserve.com
+conviva.com
+client.conviva.com
+moatads.com
+moat.com
+z.moatads.com
+pixel.adsafeprotected.com
+dt.adsafeprotected.com
+
+! =============================================
+! ANALYTICS & TRACKING
+! =============================================
+
+googleanalytics.com
+google-analytics.com
+analytics.google.com
+api.amplitude.com
+api2.amplitude.com
+api.mixpanel.com
+segment.com
+analytics.segment.com
+branch.io
+api2.branch.io
+bam.nr-data.net
+sentry.io
+
+! =============================================
+! MOBILE & APP
+! =============================================
+
+appsflyer.com
+af-reporting.s3.amazonaws.com
+adjust.com
+api.adjust.com
+bnc.lt
+firebaseremoteconfig.googleapis.com
+
+! =============================================
+! GENERAL AD NETWORKS
+! =============================================
+
+adnxs.com
+appnexus.com
+rtbhouse.com
+criteo.com
+doubleclick.net
+
+! =============================================
+! NOTES
+! =============================================
+! 
+! This list is optimized for AdGuard Home.
+! For maximum effectiveness, also enable the whitelist:
+! - whitelist-streaming
+!
+! If you experience issues with a service:
+! 1. Check if the service is in the whitelist
+! 2. Report the issue on GitHub
+! 3. Temporarily disable the list to confirm the cause
+!
+! Updated: 2026
+! Maintained by: tammo2701
+! GitHub: https://github.com/tammo2701/StreamNoAds
+!
+! =====================================================
